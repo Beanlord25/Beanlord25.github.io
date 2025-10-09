@@ -1,0 +1,29 @@
+body{
+  padding: 25px;
+
+background: #ffffff url(https://images.unsplash.com/photo-1604339754717-0d0efe86487c?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center/cover no-repeat fixed;
+
+font-family: 'Overpass Mono', monospace;
+
+color: #FFFF;
+
+  text-align: center;
+
+line-height: 5;
+  
+
+}
+.title {
+	color: #ffffff;
+}
+
+
+button {
+  border-radius: 1000px;
+}
+
+
+a:link, a:visited, a:hover, a:active {
+  color: black; /* Or any other desired color */
+  text-decoration: none; /* Removes the underline */
+}
