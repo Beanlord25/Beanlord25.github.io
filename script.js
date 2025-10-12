@@ -33,3 +33,4 @@ document.getElementById('toggle2').addEventListener('click', function() {
     this.textContent = 'Show Day 2/Update'; // Update button text
   }
 });
+
