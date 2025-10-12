@@ -27,3 +27,11 @@ a:link, a:visited, a:hover, a:active {
   color: black; /* Or any other desired color */
   text-decoration: none; /* Removes the underline */
 }
+
+.hidden1 {
+  display: none;
+}
+
+.hidden2 {
+  display: none;
+}
