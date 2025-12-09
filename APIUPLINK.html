@@ -1,5 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(Display)</title>
+</head>
+<body>
+    <h2>LAST BROADCAST</h2>
+    <div id="displayArea" style="border: 1px solid #ccc; padding: 10px;">
+        <!-- Text will be inserted here by JavaScript -->
+    </div>
 
 
+    <script>
+        // This script runs as soon as page2.html loads in the browser
+        function loadText() {
+            // Get the value from local storage using the same key ("sharedText")
+            const savedText = localStorage.getItem("sharedText");
+
+            // Find the display area element
+            const displayDiv = document.getElementById("displayArea");
+
+            // Display the saved text (or a default message if empty)
+            if (savedText) {
+                displayDiv.textContent = savedText;
+            } else {
+                displayDiv.textContent = "No text was passed.";
+            }
+            
+            // Optional: Remove the item from storage after use if it's a one-time transfer
+            // localStorage.removeItem("sharedText");
+        }
+
+        // Call the function when the page loads
+        window.onload = loadText;
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+{
 BROADCAST RECEIVED.
 CONTINUE DEV START.
 GAME SET.
@@ -7,3 +50,4 @@ BEGIN.
 B_L25
 
 END TRANSMITION
+}
