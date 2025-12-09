@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(Input)</title>
+</head>
+<body>
+    <h2>Enter Text Here:</h2>
+    <input type="text" id="textInput" placeholder="Type something...">
+    <button onclick="saveAndGo()">Go to broadcast.</button>
+
+    <script>
+        function saveAndGo() {
+            // Get the value from the input box
+            const inputText = document.getElementById("textInput").value;
+
+            // Save the value to the browser's local storage with a key, e.g., "sharedText"
+            localStorage.setItem("sharedText", inputText);
+
+            // Navigate the user to the second HTML page
+            window.location.href = "APIUPLINK.html";
+        }
+    </script>
+</body>
+</html>
